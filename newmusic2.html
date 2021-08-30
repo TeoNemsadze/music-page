@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="newmusic.css">
+	<title>Music</title>
+
+</head>
+
+<body>
+<div class="bg">
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="full.html"><img src="images/world-travel-512.png" width="130px;"></a>
+  <a class="buton" href="full.html">Home</a>
+  <a class="buton" href="about.html">About</a>
+  <a class="buton" href="blog.html">Blog</a>
+  <a class="buton" href="quiz.html">Quiz</a>
+</div> 
+
+<div id="main">
+   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "200px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+		
+		
+		     
+  <div class="text"> 
+      <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'General')">General</button>      
+  <button class="tablinks" onclick="openCity(event, 'London')">Modern Music</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Traditional Music</button>
+  </div>
+  <div id="General" class="tabcontent">
+  <h1 class="boxtitle">Music of Georgia</h1>
+ <p class="boxtitle-txt">Georgia has rich and still vibrant traditional music, which is primarily known as arguably the earliest polyphonic tradition of the Christian world. Situated on the border of Europe and Asia, Georgia is also the home of a variety of urban singing styles with a mixture of native polyphony, Middle Eastern monophony and late European harmonic languages. Georgian performers are well represented in the world's leading opera troupes and concert stages.<a href="https://en.wikipedia.org/wiki/Music_of_Georgia_(country)"> Read more...</a></p>
+</div>
+<div id="London" class="tabcontent">
+  <h3 class="music-title">Top 5 georgian modern music</h3>
+  <div class="music1">
+    <h4 class="name-1">1.Eko & Vinda Folio - Ramble around</h4>
+       <audio controls>
+       <source src="images/eko.WEBM"/>
+       </audio>
+    </div>
+       <div class="music2">
+        <h4 class="name-2">2.Kayakata - Undersky</h4>
+          <audio class="musica" controls>
+            <source src="images/Kayakata - Undersky.WEBM">
+          </audio>
+      </div>
+        <div class="music3">
+         <h4 class="name-3">3.Bedford Falls - Macedonia</h4> 
+         <audio class="musica2" controls>
+         <source src="images/Bedford Falls - MACEDONIA.WEBM" >
+          </audio>
+    </div>
+         <div class="music4">
+           <h4 class="name-4"> 4.დაგდაგანი - უკიდებ სიგარეტს</h4>
+          <audio class="musica3" controls>
+            <source src="images/დაგდაგანი - უკიდებ სიგარეტს.WEBM">
+          </audio>
+    </div> 
+          <div class="music5">
+            <h4 class="name-5"> 5.Ninjuzwaytodie - Jaguars in jagtas</h4>
+            <audio class="musica4" controls>
+              <source src="images/ninjuzwaytodie - Jaguars in jagtas.WEBM">
+            </audio>
+    </div>
+          
+</div>
+<div id="Paris" class="tabcontent">
+  <iframe width="500" height="215" src="https://www.youtube.com/embed/LQddYkCLKVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h3 class="title-txt">Chakrulo</h3>
+  <p class="traditional-1">Chakrulo is a Georgian polyphonic choral folk song. It is a three-part song from the region of Kakheti, dramatising preparations for a battle. It is characterized by two highly ornamented individual vocal parts in the backdrop of an exceptional choral foundation.
+
+When Georgian vocal polyphony was recognized by UNESCO as an Intangible Heritage masterpiece in 2001, Chakrulo was cited as a prime example of this. Chakrulo was one of 29 musical compositions included on the Voyager Golden Records that were sent into space on Voyager 2 on 20 August 1977.</p> 
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+  	      </div>
+  	       </div>
+  	     </div>  
+  	  </div> 
+      <div class="footer">
+        &copy; Designed by Teo Nemsadze
+      </div>
+  	
+	</div>
+</body>
+</html>
